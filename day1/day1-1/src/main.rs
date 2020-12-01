@@ -19,7 +19,7 @@ fn main() -> io::Result<()> {
 
     let (opt1, opt2) = find_sum(2020, numbers);
 
-    println!("solution: {} + {} = 2020", opt1, opt2);
+    println!("solution: {} + {} = 2020. {} * {} = {}", opt1, opt2, opt1, opt2, opt1*opt2);
 
     Ok(())
 }
