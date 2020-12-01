@@ -12,12 +12,10 @@ fn main() -> io::Result<()> {
 
     for line in reader.lines(){
         let num = line.unwrap();
-        // println!("{}", num);
+
         let int: i32 = num.parse().unwrap();
         numbers.insert(int);
     }
-
-    // println!("{}", numbers.len());
 
     let (opt1, opt2) = find_sum(2020, numbers);
 
